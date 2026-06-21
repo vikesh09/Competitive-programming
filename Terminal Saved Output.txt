@@ -1,0 +1,185 @@
+Last login: Fri Dec 26 00:57:09 on ttys000
+/Users/whitemuffens/.zprofile:6: no such file or directory: /opt/homebrew/bin/brew
+/Users/whitemuffens/.zprofile:7: no such file or directory: /usr/local/bin/brew
+/Users/whitemuffens/.zprofile:8: no such file or directory: /opt/homebrew/bin/brew
+whitemuffens@vikesh ~ % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+zsh: no such file or directory: /opt/homebrew/bin/brew
+whitemuffens@vikesh ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+/etc/paths.d/homebrew
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/sbin/chown -R whitemuffens:admin /opt/homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 318588, done.
+remote: Counting objects: 100% (6890/6890), done.
+remote: Compressing objects: 100% (612/612), done.
+remote: Total 318588 (delta 6491), reused 6322 (delta 6278), pack-reused 311698 (from 4)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Total 55 (delta 34), reused 34 (delta 34), pack-reused 21 (from 1)
+==> /usr/bin/sudo /bin/mkdir -p /etc/paths.d
+==> /usr/bin/sudo tee /etc/paths.d/homebrew
+/opt/homebrew/bin
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /etc/paths.d/homebrew
+==> /usr/bin/sudo /bin/chmod a+r /etc/paths.d/homebrew
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:1c98fa49eacc935640a6f8e10a2bf33f14cfc276804b71ddb658ea45ba99d167
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.arm64_big_sur.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run this command in your terminal to add Homebrew to your PATH:
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+whitemuffens@vikesh ~ % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+whitemuffens@vikesh ~ % brew --version
+
+Homebrew 5.0.7
+whitemuffens@vikesh ~ % brew install gcc
+
+==> Fetching downloads for: gcc
+✔︎ Bottle Manifest gcc (15.2.0)                     [Downloaded   23.4KB/ 23.4KB]
+✔︎ Bottle Manifest isl (0.27)                       [Downloaded   14.5KB/ 14.5KB]
+✔︎ Bottle Manifest mpfr (4.2.2)                     [Downloaded   12.7KB/ 12.7KB]
+✔︎ Bottle Manifest libmpc (1.3.1)                   [Downloaded   16.8KB/ 16.8KB]
+✔︎ Bottle Manifest lz4 (1.10.0)                     [Downloaded   13.8KB/ 13.8KB]
+✔︎ Bottle Manifest xz (5.8.2)                       [Downloaded   11.8KB/ 11.8KB]
+✔︎ Bottle Manifest zstd (1.5.7)                     [Downloaded   16.2KB/ 16.2KB]
+✔︎ Bottle Manifest gmp (6.3.0)                      [Downloaded   13.3KB/ 13.3KB]
+✔︎ Bottle libmpc (1.3.1)                            [Downloaded  147.5KB/147.5KB]
+✔︎ Bottle lz4 (1.10.0)                              [Downloaded  276.1KB/276.1KB]
+✔︎ Bottle isl (0.27)                                [Downloaded    1.7MB/  1.7MB]
+✔︎ Bottle mpfr (4.2.2)                              [Downloaded    1.1MB/  1.1MB]
+✔︎ Bottle gmp (6.3.0)                               [Downloaded    1.0MB/  1.0MB]
+✔︎ Bottle xz (5.8.2)                                [Downloaded  764.9KB/764.9KB]
+✔︎ Bottle zstd (1.5.7)                              [Downloaded  788.5KB/788.5KB]
+✔︎ Bottle gcc (15.2.0)                              [Downloaded  154.1MB/154.1MB]
+==> Installing dependencies for gcc: gmp, isl, mpfr, libmpc, lz4, xz and zstd
+==> Installing gcc dependency: gmp
+==> Pouring gmp--6.3.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gmp/6.3.0: 22 files, 3.4MB
+==> Installing gcc dependency: isl
+==> Pouring isl--0.27.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/isl/0.27: 74 files, 8.0MB
+==> Installing gcc dependency: mpfr
+==> Pouring mpfr--4.2.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mpfr/4.2.2: 31 files, 3.3MB
+==> Installing gcc dependency: libmpc
+==> Pouring libmpc--1.3.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libmpc/1.3.1: 13 files, 504.2KB
+==> Installing gcc dependency: lz4
+==> Pouring lz4--1.10.0.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/lz4/1.10.0: 24 files, 730.7KB
+==> Installing gcc dependency: xz
+==> Pouring xz--5.8.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/xz/5.8.2: 96 files, 2.7MB
+==> Installing gcc dependency: zstd
+==> Pouring zstd--1.5.7.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/zstd/1.5.7: 32 files, 2.3MB
+==> Installing gcc
+==> Pouring gcc--15.2.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gcc/15.2.0: 1,602 files, 462.7MB
+==> Running `brew cleanup gcc`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+whitemuffens@vikesh ~ % g++ --version
+
+Apple clang version 17.0.0 (clang-1700.3.19.1)
+Target: arm64-apple-darwin24.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+whitemuffens@vikesh ~ % g++-14 --version
+
+zsh: command not found: g++-14
+whitemuffens@vikesh ~ % /opt/homebrew/bin/g++-14
+
+zsh: no such file or directory: /opt/homebrew/bin/g++-14
+whitemuffens@vikesh ~ % ls /opt/homebrew/bin | grep g++
+
+aarch64-apple-darwin24-g++-15
+g++-15
+whitemuffens@vikesh ~ % echo | g++ -v -x c++ -E -
+Apple clang version 17.0.0 (clang-1700.3.19.1)
+Target: arm64-apple-darwin24.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -E -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name - -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.0 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/whitemuffens -target-linker-version 1221.4 -v -fcoverage-compilation-dir=/Users/whitemuffens -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o - -x c++ -
+clang -cc1 version 17.0.0 (clang-1700.3.19.1) default target arm64-apple-darwin24.6.0
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
+ /Library/Developer/CommandLineTools/usr/lib/clang/17/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+ /Library/Developer/CommandLineTools/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
+End of search list.
+# 1 "<stdin>"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 514 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "<stdin>" 2
+
+whitemuffens@vikesh ~ % cd /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+whitemuffens@vikesh include % sudo mkdir bits
+Password:
+whitemuffens@vikesh include % cd bits
+
+whitemuffens@vikesh bits % sudo nano stdc++.h
+
+  UW PICO 5.09                     File: stdc++.h                     Modified  
+
+#include <condition_variable>
+#include <forward_list>
+#include <future> 
+#include <initializer_list>
+#include <mutex>    
+#include <random>
+#include <ratio>
+#include <regex>
+#include <scoped_allocator>
+#include <system_error>
+#include <thread>
+#include <tuple>
+#include <typeindex>
+#include <type_traits>
+#include <unordered_map>
+#include <unordered_set>
+#endif
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
