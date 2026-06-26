@@ -13,19 +13,11 @@
 using namespace std;
 
 void solve() {
- int n,m; cin>>n>>m;
- string s; cin>>s;
- unordered_map<char,int>freq;
- int ans=0;
- for(char ch:s){
-    freq[ch]++;
+ int n; cin>>n;
+ vi a(n);
+ for(int i=0;i<n;i++){
+    cin>>a[i];
  }
- for(char ch='A';ch<='G';ch++){
-    if(freq[ch]<m){
-        ans+=(m-freq[ch]);
-    }
- }
- cout<<ans<<endl;
 
   
 }
@@ -33,8 +25,5 @@ void solve() {
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int t; cin>>t;
-    while(t--){
-        solve();
-    }
+    solve();
 }
