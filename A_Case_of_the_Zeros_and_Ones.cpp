@@ -6,6 +6,7 @@
 #include <numeric>
 #include <unordered_map>
 #include <queue>
+#include<stack>
 
 #define ll long long
 #define endl "\n"
