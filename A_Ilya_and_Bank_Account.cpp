@@ -23,10 +23,7 @@ void solve() {
         int a=n/10;
         int b=(n/100)*10+(n%10);
         cout<<max(n,max(a,b))<<endl;
-    }
-    
-   
-        
+    } 
 }
 
 int main(){
